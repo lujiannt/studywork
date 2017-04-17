@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name></display-name>
+	
+	<filter>
+	<filter-name>LoginFilter</filter-name>
+	 <filter-class>com.filter.LoginFilter</filter-class>
+	</filter>
+<filter-mapping>
+<filter-name>LoginFilter</filter-name>
+<url-pattern>/Index/*</url-pattern>
+<url-pattern>/depart/*</url-pattern>
+<url-pattern>/class/*</url-pattern>
+<url-pattern>/office/*</url-pattern>
+<url-pattern>/post/*</url-pattern>
+<url-pattern>/student/*</url-pattern>
+<url-pattern>/newPage/*</url-pattern>
+</filter-mapping>
+	
+	
+	
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>StudentServlet</servlet-name>
+		<servlet-class>com.servlet.StudentServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ClerkServlet</servlet-name>
+		<servlet-class>com.servlet.ClerkServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DepartServlet</servlet-name>
+		<servlet-class>com.servlet.DepartServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ClassServlet</servlet-name>
+		<servlet-class>com.servlet.ClassServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OfficeServlet</servlet-name>
+    <servlet-class>com.servlet.OfficeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostServlet</servlet-name>
+    <servlet-class>com.servlet.PostServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AjaxServlet</servlet-name>
+    <servlet-class>com.servlet.AjaxServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SalaryServlet</servlet-name>
+    <servlet-class>com.servlet.SalaryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChecksServlet</servlet-name>
+    <servlet-class>com.servlet.ChecksServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsServlet</servlet-name>
+    <servlet-class>com.servlet.NewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.servlet.RegisterServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>StudentServlet</servlet-name>
+		<url-pattern>/servlet/StudentServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ClerkServlet</servlet-name>
+		<url-pattern>/servlet/ClerkServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DepartServlet</servlet-name>
+		<url-pattern>/servlet/DepartServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ClassServlet</servlet-name>
+		<url-pattern>/servlet/ClassServlet</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OfficeServlet</servlet-name>
+    <url-pattern>/servlet/OfficeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostServlet</servlet-name>
+    <url-pattern>/servlet/PostServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AjaxServlet</servlet-name>
+    <url-pattern>/servlet/AjaxServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SalaryServlet</servlet-name>
+    <url-pattern>/servlet/SalaryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChecksServlet</servlet-name>
+    <url-pattern>/servlet/ChecksServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsServlet</servlet-name>
+    <url-pattern>/servlet/NewsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/servlet/RegisterServlet</url-pattern>
+  </servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 错误页面 
+
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+ -->
+
+</web-app>
